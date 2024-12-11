@@ -1,0 +1,1005 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+$colorPrincipal : #10A896;
+$colorSecundario : #ffffff;
+$colorTerciario: #EFEFE2;
+$textos-principales: #ffffff;
+$textos-secundarios: #000000;
+
+*{
+    margin: 0;
+    border: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 3rem;
+}
+
+
+
+body{ 
+
+    header{
+
+        .menuToggle{
+            display: none;
+        }
+
+
+        display: flex;
+        background-color: #ffffff;
+        width: 100%;
+        justify-content: center;
+        align-items: end;
+        gap: 60px;
+
+        a{
+            text-decoration: none;
+            margin-bottom: 25px;
+            font-size: 1.2vw;
+            color: #000000;
+            scroll-behavior: smooth;
+        }
+        a:hover{
+            color: grey;
+        }
+        img{
+            width: 100px;
+            height: auto;
+            margin-bottom: 60px;
+            margin-top: 10px;
+        }
+    }
+
+    main{
+
+        //Seccion de presentacion inicial
+
+        .section_presentation{
+            display: flex;
+            width: 100%;
+            height: auto;
+            background-color: $colorPrincipal;
+            .sec_pre_text{
+                width: 50%;
+                padding: 50px 50px 0 50px;
+                ul{
+                    list-style: none;
+                    color: $colorSecundario;
+                    li:nth-child(1){
+                        font-size: 3vw;
+                        margin-bottom: 30px;
+                        padding-right: 40px;
+                    }
+                    li:nth-child(2){
+                        font-family: "Inter", sans-serif;
+                        margin-bottom: 10px;
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 1.3vw;
+
+                    }
+                    li:nth-child(3){
+                        font-size: 1.5vw;
+                        margin-bottom: 40px;
+                    }
+
+
+                    li:nth-child(4){
+
+                        a{
+                            padding: 11px 30px;
+                            background-color: #EFEFE2;
+                            width: fit-content;
+                            text-decoration: none;
+                            color: black;
+                            font-family: "Inter", sans-serif;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 1.1vw;
+                               
+                        }
+    
+                        a:hover{
+                            background-color: #878787;
+                        }
+                    }
+
+
+                }
+            }
+            .sec_pre_img{
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        //Seccion presentacion 2
+
+        .section_presentation_2{
+            display: flex;
+            width: 100%;
+            padding: 50px;
+            background-color: #ffffff;
+            
+            flex-wrap: wrap;
+            .sec_pre_2_img{
+                display: flex;
+                width: 50%;
+                height: 540px;
+                justify-content: center;
+                align-items: center;
+                .animated_image{
+                    position: relative;
+                    width: 75%;
+                    height: auto;
+                    margin-bottom: 10%;
+                    div:nth-child(1){
+                        position: absolute;
+                        z-index: 5;                        
+                        width: 95%;
+                        height: auto;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        img{
+                            width: 100%;
+                            height: auto;
+                            box-shadow:
+                            -10px 10px 0px #000000CC,  /* Sombra azul en la esquina inferior izquierda */
+                            10px -10px 0px #10A896CC;
+                        }   
+                    }
+                }
+            }
+            .sec_pre_2_text{
+                width: 50%;
+                height: 540px;
+                margin-top: 10px; 
+                ul{
+                    list-style: none;
+                    
+                    li:nth-child(1){
+                        display: inline-block;
+                        font-size: 2.4vw;
+                        font-family: 'Inter';
+                        font-weight: 700;
+                        color: black;
+                        padding-right: 5px;
+                        padding-bottom: 20px;
+                        border-bottom: 10px solid $colorPrincipal;
+                        width: 60%;
+                    }
+
+                    li:nth-child(2){
+                        font-size: 1vw;
+                        margin-top: 20px;
+                        padding-right: 250px;
+                        color: black;
+                    }
+                }
+
+            }
+
+        }
+
+        // Seccion servicios Diego
+
+        .sec_services{
+            display: flex;
+            background-color: $colorSecundario;
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+            height: 800px;
+            gap: 30px;
+
+            p{
+                width: 100%;
+                text-align: center;
+                font-size: 2.5vw;
+                font-family: 'Inter';
+                font-weight: 700;
+                margin-top: 50px;
+                color: $textos-secundarios;
+            }
+
+            .services_cards{
+                display: flex;
+                width: 70%;
+                padding: 20px;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 20px;
+                .general_service_card{
+                    display: flex;
+                    background-color: $colorSecundario;
+                    max-width: 450px;
+                    min-width: auto;
+                    height: auto;
+                    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+                    border: 1px solid rgb(209, 209, 209);
+
+                    ul{
+                        list-style: none;
+                        padding: 20px;
+                        li:nth-child(1){
+                            color: $colorPrincipal;
+                            margin-bottom: 10px;
+                            font-family: 'Inter';
+                            font-weight: 500;
+                            font-size: 2vw;
+                        }
+                        li:nth-child(2){
+                            display: flex;
+                            margin-top: 30px;
+                            width: 90%;
+                            div:nth-child(1){
+                                margin-right: 20px;
+                            }
+                            div:nth-child(2){
+                                font-size: 1vw;
+                            }
+                        }
+                        li:nth-child(3){
+                            display: flex;
+                            margin-top: 20px;
+                            width: 90%;
+                            div:nth-child(1){
+                                margin-right: 20px;
+                            }
+                            div:nth-child(2){
+                                font-size: 1vw;
+                            }
+                        }
+                        li:nth-child(4){
+                            margin-top: 40px;
+                            a{
+                                background-color: $colorPrincipal;
+                                color: $colorSecundario;
+                                text-align: start;
+                                width: fit-content;
+                                padding: 10px 20px;
+                                font-size: 1.3vw;
+                                font-weight: 500;
+                                text-decoration: none;
+                            }
+
+                            a:hover{
+                                background-color: #006459;
+                            }
+
+                        }
+                        
+
+                    }
+                }
+                
+
+            }
+        }
+
+        .team_content{
+            display: flex;
+            padding: 50px;
+            flex-direction: column;
+            align-items: center;
+
+            h3{
+                width: 60%;
+                font-size: 2vw;
+                text-align: center;
+                font-weight: 700;
+            }
+
+            .container_team_data{
+                display: flex;
+                margin-top: 40px;
+                justify-content: space-around;
+                width: 90%;
+
+                .container_text_team{
+                    display: flex;
+                    flex-direction: column;
+                    width: 20%;
+
+                    div:nth-child(1){
+                        display: flex;
+                        align-items: center;
+                        img{
+                            padding-right: 5px;
+                        }
+                        p{
+                            color: $colorPrincipal;
+                            margin: 0;
+                            font-weight: 600;
+                            font-size: 1vw;
+                        }
+                    }
+                    p{
+                        margin-top: 10px;
+                        font-size: 1vw;
+
+                    }
+                
+                }
+
+            }
+
+        }
+
+        
+        
+        // .servicio1 { background-color: #cd7f32; }
+        // .servicio2 { background-color: rgb(228, 228, 228); }
+        // .servicio3 { background-color: gold; }
+        
+        //------------------
+        // Sección de Planes
+        //------------------
+        .body_cards {
+            background: $colorPrincipal;
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5rem;
+            .header_cards {
+                color: $textos-principales;
+                margin: 3.3rem 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .cards {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 30px;
+                
+            
+                .card {
+                    background: $colorSecundario;
+                    color: $textos-secundarios;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    transform: scale(1);
+                    width: auto;
+
+
+                    &.active {
+                    background: $colorTerciario;
+                    transform: scale(1);
+                    z-index: 1;
+                    }
+                }
+            }
+
+            .list-item {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 1rem 0;
+            
+                .icon{
+                    margin-right: 10px;
+                    width: 2rem;
+                    height: 2rem;
+                }
+            
+                .list-item-text {
+                  margin-left: 1.5rem;
+                }
+            }
+
+            ul{
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                height: 100%;
+            
+                li {
+                  list-style-type: none;
+                  display: flex;
+                  justify-content: center;
+                  font-size: small;
+                  width: 100%;
+                  padding: 1rem 0;
+            
+                  &.price {
+
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    color: $colorPrincipal;
+                    padding-bottom: 2rem;
+                    padding-right: 2rem;
+                  }
+                }
+            }
+
+            .shadow {
+                box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+            }
+            
+            .btn {
+                height: 2.6rem;
+                width: 13.3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $colorPrincipal;
+                color: $colorSecundario;
+                font-weight: bold;
+
+            }
+
+            .bottom-bar {
+                font-size: 0.9rem;
+                border-bottom: 2px solid hsl(0, 0%, 0%);
+            }
+            
+            .pack {
+                padding-right: 2rem;
+                font-size: 1.7rem;
+                font-weight: bold;
+                color: $textos-secundarios;
+            }
+
+        }
+
+
+        //FORMULARIO
+        
+        .formulario {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 80%;
+            padding: 3rem;
+
+            .formulario1, .formulario2 {
+                flex: 1;
+            }
+
+            .formulario2 {
+
+                form{
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+              
+                    input, textarea, select{
+                        padding: 1%;
+                        font-size: 110%;
+                        border: 1px solid #000000;
+                        box-sizing: border-box;
+                    }
+              
+                    button {
+                        padding: 3%;
+                        background-color: $colorPrincipal;
+                        font-size: large;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        width: 8rem;
+              
+                        &:hover {
+                            background-color: #0f8073;
+                        }
+                    }
+                }
+            }
+            .formulario1 img {
+                width: 90%;
+                height: auto;
+                box-shadow: 10px 10px 1px rgb(70, 67, 67);
+            }
+
+            
+
+            .texto_contactanos {
+                margin: 50px 0px 10px 0px;
+                color: $colorPrincipal;
+                font-size: 3rem;
+                padding: 0;
+            }
+            .contacto{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                padding-top: 2rem;
+                h3 {
+                  font-size: 1rem;
+                  margin-right: 1%;
+  
+                  i {
+                    color: $colorPrincipal;
+                  }
+              }
+            }   
+        }         
+    }
+
+}
+
+//|------------------|
+//|------------------|
+//| Responsive Styles|
+//|------------------|
+//|------------------|
+
+//|--------------|
+//| Tablet Styles|
+//|--------------|
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    body{
+
+        //-------|
+        // Header|
+        //-------|
+        header{
+            justify-content: space-between;
+            margin: 20px auto;
+            padding: 20px;
+            a{
+                display:none;
+            }
+
+            img{
+                margin-bottom: 0px;
+                width: 50px;
+            }
+
+
+
+            a:nth-child(6){
+                align-self: center;
+                margin-bottom: 0px;
+                font-size: 3vw;
+            }
+        }
+        //-----|
+        // Main|
+        //-----|
+        main{
+            //---------------|
+            // Presentacion 1|
+            //---------------|
+            .section_presentation{
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+                gap: 0px;
+                .sec_pre_img{
+                    width: 80%;
+                    padding: 10px 0px 0px 0px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                } 
+                .sec_pre_text{
+                    width: 80%;
+                    padding: 0px 0px 10px 0px;
+                    ul{
+                        list-style: none;
+                        color: $colorSecundario;
+                        padding: 0px;
+                        li{
+                            width: 100%;
+                        }
+                        li:nth-child(1){
+                            font-size: 5vw; 
+                            padding: 0;
+                            margin: 3vw 0vw;
+                        }
+                        li:nth-child(2){
+                            font-size: 3vw; 
+                            padding: 0;
+                            margin: 3vw 0vw;
+                        }
+                        li:nth-child(3){
+                            font-size: 3.5vw; 
+                            padding: 0;
+                            margin: 3vw 0vw;
+                        }
+                        div{
+                            background-color: #EFEFE2;
+                            width: fit-content;
+                            padding: 0px;
+                            p{
+                                font-size: 3vw;
+                                padding: 10px 20px;
+                            }
+                        }
+            
+                    }
+                } 
+                
+            }
+            //---------------|
+            // Presentacion 2|
+            //---------------|
+            .section_presentation_2{
+                .sec_pre_2_text{
+                    height: 470px;
+                    ul{
+                        padding-top: 50px;
+                        li:nth-child(1){
+                            font-size: 3vw;
+                            width: 300px;
+                        }
+                        li:nth-child(2){
+                            padding: 0px;
+                            font-size: 2.5vw;
+                            margin-top: 10%;
+                        }
+                    }
+                }
+                .sec_pre_2_img{
+                    padding-top: 450px;
+                }
+            }
+            //---------------------|
+            // Seccion de servicios|
+            //---------------------|
+            .sec_services{
+    
+                p{
+                    font-size: 5vw;
+                    padding: 0px 50px;
+                }
+    
+                .services_cards{
+                    .general_service_card{
+    
+                        ul{
+                            li:nth-child(1){
+                                font-size: 5vw;
+                            }
+                            li:nth-child(2){
+                                font-size: 3vw;
+
+    
+                            }
+                            li:nth-child(3){
+                                display: flex;
+                                margin-top: 30px;
+                                width: 90%;
+                                div:nth-child(1){
+                                    margin-right: 20px;
+                                }
+                                div:nth-child(2){
+                                    font-size: 2.5vw;
+                                }
+                            }
+                            li:nth-child(4){
+                                div:nth-child(1){
+                                    margin-right: 20px;
+                                }
+                                div:nth-child(2){
+                                    font-size: 2.5vw;
+                                }
+                            }
+                            li:nth-child(5){
+                                p{
+                                    font-size: 3vw;
+                                }
+                            }
+                            
+    
+                        }
+                    }
+                    
+    
+                }
+            }
+
+            //--------------------------|
+            // Seccion de presentacion 2|
+            //--------------------------|
+
+            .section_presentation_2{
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                .animated_image{
+                    width: auto;
+                    height: auto;
+                }
+            }
+            
+            //-----------------------|
+            // Planes de contabilidad|
+            //-----------------------|
+            .body_cards {
+                .header_cards {
+                    color: $textos-principales;
+                    margin: 3.3rem 50px;
+                }
+                .cards {
+                    .card {
+                        transform: scale(0.9);
+                        &.active {
+                        transform: scale(0.9);
+                        }
+                    }
+                }
+                
+            }
+            //-----------|
+            // Formulario|
+            //-----------|
+            .formulario{
+                flex-direction: column;
+                gap: 50px;
+            }
+                          
+        }
+        .active{
+            display: block;
+        }
+    }     
+}
+
+//|--------------|
+//| Mobile Styles|
+//|--------------|
+
+@media (min-width: 319px) and (max-width: 426px) {
+
+    body{
+
+        //-------|
+        // Header|
+        //-------|
+        header{
+
+            .menuToggle{
+                display: block;
+            }
+
+            justify-content: space-between;
+            margin: 20px auto;
+            padding: 20px;
+            a{
+                display:none;
+            }
+
+            img{
+                margin-bottom: 0px;
+                width: 50px;
+            }
+
+            a:nth-child(6){
+                align-self: center;
+                margin-bottom: 0px;
+                font-size: 3vw;
+            }
+        }
+        //-----|
+        // Main|
+        //-----|
+        main{
+            //---------------|
+            // Presentacion 1|
+            //---------------|
+            .section_presentation{
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+                gap: 0px;
+                .sec_pre_img{
+                    width: 80%;
+                    padding: 10px 0px 0px 0px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                } 
+                .sec_pre_text{
+                    width: 80%;
+                    padding: 0px 0px 10px 0px;
+                    ul{
+                        list-style: none;
+                        color: $colorSecundario;
+                        padding: 0px;
+                        li{
+                            width: 100%;
+                        }
+                        li:nth-child(1){
+                            font-size: 5vw; 
+                            padding: 0;
+                            margin: 3vw 0vw;
+                        }
+                        li:nth-child(2){
+                            font-size: 3vw; 
+                            padding: 0;
+                            margin: 3vw 0vw;
+                        }
+                        li:nth-child(3){
+                            font-size: 3.5vw; 
+                            padding: 0;
+                            margin: 3vw 0vw;
+                        }
+                        a{
+                            background-color: #EFEFE2;
+                            width: fit-content;
+                            padding: 10px;
+                            font-size: 2vw;
+                        }
+            
+                    }
+                } 
+                
+            }
+            //---------------|
+            // Presentacion 2|
+            //---------------|
+            .section_presentation_2{
+                .sec_pre_2_text{
+                    margin: 100px 0;
+                    height: auto;
+                    width: 100%;
+                    ul{
+                        li:nth-child(1){
+                            p{
+                                font-size: 3vw;
+                            }
+                        }
+                        li:nth-child(2){
+                            padding: 0px;
+                            p{
+                                font-size: 2vw;
+                            }
+                        }
+                    }
+                }
+                .sec_pre_2_img{
+                    width: 90%;
+                    height: auto;
+                    margin-top: 35%;
+                    .animated_image{
+                        margin: 0;
+
+                    }
+                }
+            }
+            //---------------------|
+            // Seccion de servicios|
+            //---------------------|
+            .sec_services{
+    
+                p{
+                    font-size: 5vw;
+                    padding: 0px 50px;
+                }
+    
+                .services_cards{
+                    .general_service_card{
+    
+                        ul{
+                            padding: 12px;
+                            li:nth-child(1){
+                                font-size: 5vw;
+                            }
+                            li:nth-child(2){
+                                display: flex;
+                                margin-top: 30px;
+                                width: 90%;
+                                div:nth-child(1){
+                                    margin-right: 20px;
+                                }
+                                div:nth-child(2){
+                                    font-size: 2.5vw;
+                                }
+                            }
+                            li:nth-child(3){
+                                div:nth-child(1){
+                                    margin-right: 20px;
+                                }
+                                div:nth-child(2){
+                                    font-size: 2.5vw;
+                                }
+                            }
+                            li:nth-child(4){
+                                a{
+                                    padding: 10px 20px;
+                                    font-size: 2.5vw;
+                                }
+                            }
+                            
+    
+                        }
+                    }
+                    
+    
+                }
+            }
+
+            //--------------------------|
+            // Seccion de presentacion 2|
+            //--------------------------|
+
+            .section_presentation_2{
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                .animated_image{
+                    width: auto;
+                    height: auto;
+                }
+            }
+            
+            //-----------------------|
+            // Planes de contabilidad|
+            //-----------------------|
+            .body_cards {
+                .header_cards {
+                    color: $textos-principales;
+                    margin: 3.3rem 50px;
+                }
+                .cards {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    .card {
+                        transform: scale(0.9);
+                        &.active {
+                        transform: scale(0.9);
+                        }
+                    }
+                }
+                
+            }
+            //-----------|
+            // Formulario|
+            //-----------|
+            .formulario{
+                flex-direction: column;
+                gap: 50px;
+            }
+                          
+        }
+        .active{
+            display: block;
+        }
+    }     
+}
