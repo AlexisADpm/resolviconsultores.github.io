@@ -181,7 +181,7 @@ body{
                         font-size: 2.4vw;
                         font-family: 'Inter';
                         font-weight: 700;
-                        color: black;
+                        color: rgb(0, 0, 0);
                         padding-right: 5px;
                         padding-bottom: 20px;
                         border-bottom: 10px solid $colorPrincipal;
@@ -189,7 +189,7 @@ body{
                     }
 
                     li:nth-child(2){
-                        font-size: 1vw;
+                        font-size: vw;
                         margin-top: 20px;
                         padding-right: 250px;
                         color: black;
@@ -603,6 +603,35 @@ body{
                 padding: 0px;
                 margin: 0px;
                 gap: 0px;
+                .sec_pre_2_img{
+                display: flex;
+                width: 50%;
+                height: 540px;
+                justify-content: center;
+                align-items: center;
+                .animated_image{
+                    position: relative;
+                    width: 75%;
+                    height: auto;
+                    margin-bottom: 10%;
+                    div:nth-child(1){
+                        position: absolute;
+                        z-index: 5;                        
+                        width: 95%;
+                        height: auto;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        img{
+                            width: 100%;
+                            height: auto;
+                            box-shadow:
+                            -10px 10px 0px #000000CC,  /* Sombra azul en la esquina inferior izquierda */
+                            10px -10px 0px #10A896CC;
+                        }   
+                    }
+                }
+            }
                 .sec_pre_img{
                     width: 80%;
                     padding: 10px 0px 0px 0px;
@@ -636,6 +665,25 @@ body{
                             padding: 0;
                             margin: 3vw 0vw;
                         }
+                        li:nth-child(4){
+
+                            a{
+                                padding: 11px 30px;
+                                background-color: #EFEFE2;
+                                width: fit-content;
+                                text-decoration: none;
+                                color: black;
+                                font-family: "Inter", sans-serif;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 2vw;
+                                   
+                            }
+        
+                            a:hover{
+                                background-color: #878787;
+                            }
+                        }
                         div{
                             background-color: #EFEFE2;
                             width: fit-content;
@@ -655,22 +703,26 @@ body{
             //---------------|
             .section_presentation_2{
                 .sec_pre_2_text{
-                    height: 470px;
+                    width: 80%;
+                    height: 540px;
+                    margin-top: 100px;
                     ul{
                         padding-top: 50px;
                         li:nth-child(1){
                             font-size: 3vw;
-                            width: 300px;
+                            width: 500px;
                         }
                         li:nth-child(2){
                             padding: 0px;
+                            margin: 0px;
                             font-size: 2.5vw;
                             margin-top: 10%;
                         }
                     }
                 }
                 .sec_pre_2_img{
-                    padding-top: 450px;
+                    padding-top: 650px;
+                    width: 80%;
                 }
             }
             //---------------------|
@@ -692,6 +744,9 @@ body{
                             }
                             li:nth-child(2){
                                 font-size: 3vw;
+                                div:nth-child(2){
+                                    font-size: 2.5vw;
+                                }
 
     
                             }
@@ -949,8 +1004,6 @@ body{
     
                         }
                     }
-                    
-    
                 }
             }
 

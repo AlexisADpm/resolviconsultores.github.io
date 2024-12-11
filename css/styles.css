@@ -147,14 +147,14 @@ body main .section_presentation_2 .sec_pre_2_text ul li:nth-child(1) {
   font-size: 2.4vw;
   font-family: "Inter";
   font-weight: 700;
-  color: black;
+  color: rgb(0, 0, 0);
   padding-right: 5px;
   padding-bottom: 20px;
   border-bottom: 10px solid #10A896;
   width: 60%;
 }
 body main .section_presentation_2 .sec_pre_2_text ul li:nth-child(2) {
-  font-size: 1vw;
+  font-size: vw;
   margin-top: 20px;
   padding-right: 250px;
   color: black;
@@ -469,6 +469,33 @@ body main .formulario .contacto h3 i {
     margin: 0px;
     gap: 0px;
   }
+  body main .section_presentation .sec_pre_2_img {
+    display: flex;
+    width: 50%;
+    height: 540px;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .section_presentation .sec_pre_2_img .animated_image {
+    position: relative;
+    width: 75%;
+    height: auto;
+    margin-bottom: 10%;
+  }
+  body main .section_presentation .sec_pre_2_img .animated_image div:nth-child(1) {
+    position: absolute;
+    z-index: 5;
+    width: 95%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  body main .section_presentation .sec_pre_2_img .animated_image div:nth-child(1) img {
+    width: 100%;
+    height: auto;
+    box-shadow: -10px 10px 0px rgba(0, 0, 0, 0.8), 10px -10px 0px rgba(16, 168, 150, 0.8);
+  }
   body main .section_presentation .sec_pre_img {
     width: 80%;
     padding: 10px 0px 0px 0px;
@@ -504,6 +531,20 @@ body main .formulario .contacto h3 i {
     padding: 0;
     margin: 3vw 0vw;
   }
+  body main .section_presentation .sec_pre_text ul li:nth-child(4) a {
+    padding: 11px 30px;
+    background-color: #EFEFE2;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+  }
+  body main .section_presentation .sec_pre_text ul li:nth-child(4) a:hover {
+    background-color: #878787;
+  }
   body main .section_presentation .sec_pre_text ul div {
     background-color: #EFEFE2;
     width: fit-content;
@@ -514,22 +555,26 @@ body main .formulario .contacto h3 i {
     padding: 10px 20px;
   }
   body main .section_presentation_2 .sec_pre_2_text {
-    height: 470px;
+    width: 80%;
+    height: 540px;
+    margin-top: 100px;
   }
   body main .section_presentation_2 .sec_pre_2_text ul {
     padding-top: 50px;
   }
   body main .section_presentation_2 .sec_pre_2_text ul li:nth-child(1) {
     font-size: 3vw;
-    width: 300px;
+    width: 500px;
   }
   body main .section_presentation_2 .sec_pre_2_text ul li:nth-child(2) {
     padding: 0px;
+    margin: 0px;
     font-size: 2.5vw;
     margin-top: 10%;
   }
   body main .section_presentation_2 .sec_pre_2_img {
-    padding-top: 450px;
+    padding-top: 650px;
+    width: 80%;
   }
   body main .sec_services p {
     font-size: 5vw;
@@ -540,6 +585,9 @@ body main .formulario .contacto h3 i {
   }
   body main .sec_services .services_cards .general_service_card ul li:nth-child(2) {
     font-size: 3vw;
+  }
+  body main .sec_services .services_cards .general_service_card ul li:nth-child(2) div:nth-child(2) {
+    font-size: 2.5vw;
   }
   body main .sec_services .services_cards .general_service_card ul li:nth-child(3) {
     display: flex;
