@@ -1,0 +1,13 @@
+Tablet responsive
+
+Separar las cards
+
+Desaparecer el menu hamburguesa en los estilos responsive de table y movile
+
+Cambiarlo al menu que se mueve con animaciones
+
+Cambiar el titulo de la seccion de servicios
+
+En la linea 57, 58, 79, 80, hay comentarios con respecto a las modificaciones que se les debe hacer a las cards de servicios para que estas se vean bien, debemos eliminiar o cambiar el subtitulo en negro que tenemos, y agrandar el titulo
+
+hacer la version responsive de movil S, ajustar algunos iconos
